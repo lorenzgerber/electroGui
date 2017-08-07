@@ -1,0 +1,123 @@
+\hypertarget{helper__functions_8c}{}\section{helper\+\_\+functions.\+c File Reference}
+\label{helper__functions_8c}\index{helper\+\_\+functions.\+c@{helper\+\_\+functions.\+c}}
+{\ttfamily \#include $<$gtk/gtk.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}helper\+\_\+functions.\+h\char`\"{}}\\*
+Include dependency graph for helper\+\_\+functions.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{helper__functions_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Gtk\+Widget $\ast$ \hyperlink{helper__functions_8c_af86dd601bf334aeed93cb1622cffdc52}{add\+\_\+widget\+\_\+with\+\_\+label\+\_\+vbox} (Gtk\+Container $\ast$box, gchar $\ast$caption, Gtk\+Widget $\ast$widget)
+\begin{DoxyCompactList}\small\item\em Function constructs a label above a provided widget. \end{DoxyCompactList}\item 
+Gtk\+Widget $\ast$ \hyperlink{helper__functions_8c_a3fbd1d54b640d4111a474a0ba2578f68}{add\+\_\+widget\+\_\+with\+\_\+label\+\_\+hbox} (Gtk\+Container $\ast$box, gchar $\ast$caption, Gtk\+Widget $\ast$widget)
+\begin{DoxyCompactList}\small\item\em Function constructs a label to the left of a provided widget. \end{DoxyCompactList}\item 
+Gtk\+Widget $\ast$ \hyperlink{helper__functions_8c_a979e4c6c8f0994dd482867c9c5db4c99}{gtk\+\_\+entry\+\_\+with\+\_\+name\+\_\+new} (gchar $\ast$name)
+\begin{DoxyCompactList}\small\item\em Helper to create entry widget with a name. \end{DoxyCompactList}\item 
+Gtk\+Widget $\ast$ \hyperlink{helper__functions_8c_ac0b769c1ba8b9da1aadd11681c5d3eee}{find\+\_\+child} (Gtk\+Widget $\ast$parent, const gchar $\ast$name)
+\begin{DoxyCompactList}\small\item\em Find recursively child widgets of a G\+TK container by name. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{helper\+\_\+functions.\+c@{helper\+\_\+functions.\+c}!add\+\_\+widget\+\_\+with\+\_\+label\+\_\+hbox@{add\+\_\+widget\+\_\+with\+\_\+label\+\_\+hbox}}
+\index{add\+\_\+widget\+\_\+with\+\_\+label\+\_\+hbox@{add\+\_\+widget\+\_\+with\+\_\+label\+\_\+hbox}!helper\+\_\+functions.\+c@{helper\+\_\+functions.\+c}}
+\subsubsection[{\texorpdfstring{add\+\_\+widget\+\_\+with\+\_\+label\+\_\+hbox(\+Gtk\+Container $\ast$box, gchar $\ast$caption, Gtk\+Widget $\ast$widget)}{add_widget_with_label_hbox(GtkContainer *box, gchar *caption, GtkWidget *widget)}}]{\setlength{\rightskip}{0pt plus 5cm}Gtk\+Widget$\ast$ add\+\_\+widget\+\_\+with\+\_\+label\+\_\+hbox (
+\begin{DoxyParamCaption}
+\item[{Gtk\+Container $\ast$}]{box, }
+\item[{gchar $\ast$}]{caption, }
+\item[{Gtk\+Widget $\ast$}]{widget}
+\end{DoxyParamCaption}
+)}\hypertarget{helper__functions_8c_a3fbd1d54b640d4111a474a0ba2578f68}{}\label{helper__functions_8c_a3fbd1d54b640d4111a474a0ba2578f68}
+
+
+Function constructs a label to the left of a provided widget. 
+
+The function creates a new hbox and a label. The provided widget is put in the hbox together with the new label which results in a label to the left of the widget. The hbox is then put into the provided container/box.
+
+
+\begin{DoxyParams}{Parameters}
+{\em box} & Gtk Container into which the hbox with label and widget shall be added \\
+\hline
+{\em caption} & String used to construct the caption \\
+\hline
+{\em widget} & widget to which a label shall be constructed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Gtk\+Widget$\ast$ returns pointer to the given box/container. This is not always needed but sometimes of advantage when multiple widgets shall be constructed in a loop with a deeply nested constructor. 
+\end{DoxyReturn}
+\index{helper\+\_\+functions.\+c@{helper\+\_\+functions.\+c}!add\+\_\+widget\+\_\+with\+\_\+label\+\_\+vbox@{add\+\_\+widget\+\_\+with\+\_\+label\+\_\+vbox}}
+\index{add\+\_\+widget\+\_\+with\+\_\+label\+\_\+vbox@{add\+\_\+widget\+\_\+with\+\_\+label\+\_\+vbox}!helper\+\_\+functions.\+c@{helper\+\_\+functions.\+c}}
+\subsubsection[{\texorpdfstring{add\+\_\+widget\+\_\+with\+\_\+label\+\_\+vbox(\+Gtk\+Container $\ast$box, gchar $\ast$caption, Gtk\+Widget $\ast$widget)}{add_widget_with_label_vbox(GtkContainer *box, gchar *caption, GtkWidget *widget)}}]{\setlength{\rightskip}{0pt plus 5cm}Gtk\+Widget$\ast$ add\+\_\+widget\+\_\+with\+\_\+label\+\_\+vbox (
+\begin{DoxyParamCaption}
+\item[{Gtk\+Container $\ast$}]{box, }
+\item[{gchar $\ast$}]{caption, }
+\item[{Gtk\+Widget $\ast$}]{widget}
+\end{DoxyParamCaption}
+)}\hypertarget{helper__functions_8c_af86dd601bf334aeed93cb1622cffdc52}{}\label{helper__functions_8c_af86dd601bf334aeed93cb1622cffdc52}
+
+
+Function constructs a label above a provided widget. 
+
+The function creates a new vbox and a label. The provided widget is put in the vbox together with the new label which results in a label above the widget. The vbox is then put into the provided container/box.
+
+
+\begin{DoxyParams}{Parameters}
+{\em box} & Gtk Container into which the vbox with label and widget shall be added \\
+\hline
+{\em caption} & String used to construct the caption \\
+\hline
+{\em widget} & widget to which a label shall be constructed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Gtk\+Widget$\ast$ returns pointer to the given box/container. This is not always needed but sometimes of advantage when multiple widgets shall be constructed in a loop with a deeply nested constructor. 
+\end{DoxyReturn}
+\index{helper\+\_\+functions.\+c@{helper\+\_\+functions.\+c}!find\+\_\+child@{find\+\_\+child}}
+\index{find\+\_\+child@{find\+\_\+child}!helper\+\_\+functions.\+c@{helper\+\_\+functions.\+c}}
+\subsubsection[{\texorpdfstring{find\+\_\+child(\+Gtk\+Widget $\ast$parent, const gchar $\ast$name)}{find_child(GtkWidget *parent, const gchar *name)}}]{\setlength{\rightskip}{0pt plus 5cm}Gtk\+Widget$\ast$ find\+\_\+child (
+\begin{DoxyParamCaption}
+\item[{Gtk\+Widget $\ast$}]{parent, }
+\item[{const gchar $\ast$}]{name}
+\end{DoxyParamCaption}
+)}\hypertarget{helper__functions_8c_ac0b769c1ba8b9da1aadd11681c5d3eee}{}\label{helper__functions_8c_ac0b769c1ba8b9da1aadd11681c5d3eee}
+
+
+Find recursively child widgets of a G\+TK container by name. 
+
+Recursive search of child widgets in a G\+TK container structure. The function returns, when found a pointer to the respective widget, else N\+U\+LL. 
+\begin{DoxyParams}{Parameters}
+{\em parent} & Widget to start the search at. \\
+\hline
+{\em name} & String of the name to search for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pointer to the found widget or N\+U\+LL 
+\end{DoxyReturn}
+\index{helper\+\_\+functions.\+c@{helper\+\_\+functions.\+c}!gtk\+\_\+entry\+\_\+with\+\_\+name\+\_\+new@{gtk\+\_\+entry\+\_\+with\+\_\+name\+\_\+new}}
+\index{gtk\+\_\+entry\+\_\+with\+\_\+name\+\_\+new@{gtk\+\_\+entry\+\_\+with\+\_\+name\+\_\+new}!helper\+\_\+functions.\+c@{helper\+\_\+functions.\+c}}
+\subsubsection[{\texorpdfstring{gtk\+\_\+entry\+\_\+with\+\_\+name\+\_\+new(gchar $\ast$name)}{gtk_entry_with_name_new(gchar *name)}}]{\setlength{\rightskip}{0pt plus 5cm}Gtk\+Widget$\ast$ gtk\+\_\+entry\+\_\+with\+\_\+name\+\_\+new (
+\begin{DoxyParamCaption}
+\item[{gchar $\ast$}]{name}
+\end{DoxyParamCaption}
+)}\hypertarget{helper__functions_8c_a979e4c6c8f0994dd482867c9c5db4c99}{}\label{helper__functions_8c_a979e4c6c8f0994dd482867c9c5db4c99}
+
+
+Helper to create entry widget with a name. 
+
+Naming widgets is handy as they can be searched easily with \hyperlink{helper__functions_8c_ac0b769c1ba8b9da1aadd11681c5d3eee}{find\+\_\+child()} also provided in this helper function collection.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & string on how to name the new entry widget \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Gtk\+Widget$\ast$ pointer to the constructed and named gtk\+\_\+entry widget 
+\end{DoxyReturn}

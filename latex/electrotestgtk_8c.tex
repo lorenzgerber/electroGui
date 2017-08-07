@@ -1,0 +1,66 @@
+\hypertarget{electrotestgtk_8c}{}\section{electrotestgtk.\+c File Reference}
+\label{electrotestgtk_8c}\index{electrotestgtk.\+c@{electrotestgtk.\+c}}
+{\ttfamily \#include $<$gtk/gtk.\+h$>$}\\*
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}electrotestgtk.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}voltage\+\_\+box.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}resistor\+\_\+box.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}coupling\+\_\+box.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}calc\+\_\+result\+\_\+box.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}helper\+\_\+functions.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}libresistance.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}libpower.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}libcomponent.\+h\char`\"{}}\\*
+Include dependency graph for electrotestgtk.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{electrotestgtk_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{electrotestgtk_8c_a7ec75a115453b506dbd31c4675a206f1}{close\+App} (Gtk\+Widget $\ast$window, gpointer data)
+\begin{DoxyCompactList}\small\item\em close\+App callback function \end{DoxyCompactList}\item 
+gint \hyperlink{electrotestgtk_8c_a7490dccd8cae3e56d4df21f6d03c351d}{main} (gint argc, gchar $\ast$argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Main of electrotestgtk Application. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{electrotestgtk.\+c@{electrotestgtk.\+c}!close\+App@{close\+App}}
+\index{close\+App@{close\+App}!electrotestgtk.\+c@{electrotestgtk.\+c}}
+\subsubsection[{\texorpdfstring{close\+App(\+Gtk\+Widget $\ast$window, gpointer data)}{closeApp(GtkWidget *window, gpointer data)}}]{\setlength{\rightskip}{0pt plus 5cm}void close\+App (
+\begin{DoxyParamCaption}
+\item[{Gtk\+Widget $\ast$}]{window, }
+\item[{gpointer}]{data}
+\end{DoxyParamCaption}
+)}\hypertarget{electrotestgtk_8c_a7ec75a115453b506dbd31c4675a206f1}{}\label{electrotestgtk_8c_a7ec75a115453b506dbd31c4675a206f1}
+
+
+close\+App callback function 
+
+Function to close main G\+TK application window.
+
+
+\begin{DoxyParams}{Parameters}
+{\em window,pointer} & to the main window widget \\
+\hline
+{\em data,pointer} & for extra data, not used \\
+\hline
+\end{DoxyParams}
+\index{electrotestgtk.\+c@{electrotestgtk.\+c}!main@{main}}
+\index{main@{main}!electrotestgtk.\+c@{electrotestgtk.\+c}}
+\subsubsection[{\texorpdfstring{main(gint argc, gchar $\ast$argv[])}{main(gint argc, gchar *argv[])}}]{\setlength{\rightskip}{0pt plus 5cm}gint main (
+\begin{DoxyParamCaption}
+\item[{gint}]{argc, }
+\item[{gchar $\ast$}]{argv\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}\hypertarget{electrotestgtk_8c_a7490dccd8cae3e56d4df21f6d03c351d}{}\label{electrotestgtk_8c_a7490dccd8cae3e56d4df21f6d03c351d}
+
+
+Main of electrotestgtk Application. 
+
+Application G\+T\+K+ gui frontend for electrotest libraries. The Main file constructs the G\+UI by calling the three respective constructor functions. Interfacing to the libraries happens mostly in the calc\+\_\+results\+\_\+box gui part. Currently the application does not implement advanced user input validation and relies on the functionality in the libraries. $\ast$ 

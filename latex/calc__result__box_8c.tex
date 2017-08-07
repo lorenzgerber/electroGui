@@ -1,0 +1,88 @@
+\hypertarget{calc__result__box_8c}{}\section{calc\+\_\+result\+\_\+box.\+c File Reference}
+\label{calc__result__box_8c}\index{calc\+\_\+result\+\_\+box.\+c@{calc\+\_\+result\+\_\+box.\+c}}
+{\ttfamily \#include $<$gtk/gtk.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}electrotestgtk.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}helper\+\_\+functions.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}resistor\+\_\+box.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}voltage\+\_\+box.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}coupling\+\_\+box.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}calc\+\_\+result\+\_\+box.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}libresistance.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}libpower.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}libcomponent.\+h\char`\"{}}\\*
+Include dependency graph for calc\+\_\+result\+\_\+box.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{calc__result__box_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{calc__result__box_8c_a4e512d25671372fda598cd3609bccad5}{button\+\_\+clicked} (Gtk\+Widget $\ast$button, struct \hyperlink{structgui__comp}{gui\+\_\+comp} $\ast$gui)
+\begin{DoxyCompactList}\small\item\em callback function for calculation button \end{DoxyCompactList}\item 
+Gtk\+Widget $\ast$ \hyperlink{calc__result__box_8c_acd610c39c67f9c949378aaa89cebb916}{calc\+\_\+result\+\_\+box\+\_\+new} (struct \hyperlink{structgui__comp}{gui\+\_\+comp} $\ast$gui)
+\begin{DoxyCompactList}\small\item\em Constructor of the lower G\+UI part. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+Gtk\+Widget $\ast$ \hyperlink{calc__result__box_8c_a03bdde00fd1c6cf10c29b023d34a33b4}{result\+\_\+power}
+\item 
+Gtk\+Widget $\ast$ \hyperlink{calc__result__box_8c_a29071cefa6e04bbd40f54406d4de450f}{result\+\_\+resistance}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{calc\+\_\+result\+\_\+box.\+c@{calc\+\_\+result\+\_\+box.\+c}!button\+\_\+clicked@{button\+\_\+clicked}}
+\index{button\+\_\+clicked@{button\+\_\+clicked}!calc\+\_\+result\+\_\+box.\+c@{calc\+\_\+result\+\_\+box.\+c}}
+\subsubsection[{\texorpdfstring{button\+\_\+clicked(\+Gtk\+Widget $\ast$button, struct gui\+\_\+comp $\ast$gui)}{button_clicked(GtkWidget *button, struct gui_comp *gui)}}]{\setlength{\rightskip}{0pt plus 5cm}void button\+\_\+clicked (
+\begin{DoxyParamCaption}
+\item[{Gtk\+Widget $\ast$}]{button, }
+\item[{struct {\bf gui\+\_\+comp} $\ast$}]{gui}
+\end{DoxyParamCaption}
+)}\hypertarget{calc__result__box_8c_a4e512d25671372fda598cd3609bccad5}{}\label{calc__result__box_8c_a4e512d25671372fda598cd3609bccad5}
+
+
+callback function for calculation button 
+
+Function uses the electrotest libraries to calculate the replacement resistor and power. Currently, no additional error handling over the libraries is implemented. The function takes a struct with pointers to the relevant gui parts and the data array that contains the resistor values.
+
+
+\begin{DoxyParams}{Parameters}
+{\em button} & The button widget to which the callback relates. \\
+\hline
+{\em gui} & A struct that contains pointers to all gui parts and to the array which contains the resistor values. \\
+\hline
+\end{DoxyParams}
+\index{calc\+\_\+result\+\_\+box.\+c@{calc\+\_\+result\+\_\+box.\+c}!calc\+\_\+result\+\_\+box\+\_\+new@{calc\+\_\+result\+\_\+box\+\_\+new}}
+\index{calc\+\_\+result\+\_\+box\+\_\+new@{calc\+\_\+result\+\_\+box\+\_\+new}!calc\+\_\+result\+\_\+box.\+c@{calc\+\_\+result\+\_\+box.\+c}}
+\subsubsection[{\texorpdfstring{calc\+\_\+result\+\_\+box\+\_\+new(struct gui\+\_\+comp $\ast$gui)}{calc_result_box_new(struct gui_comp *gui)}}]{\setlength{\rightskip}{0pt plus 5cm}Gtk\+Widget$\ast$ calc\+\_\+result\+\_\+box\+\_\+new (
+\begin{DoxyParamCaption}
+\item[{struct {\bf gui\+\_\+comp} $\ast$}]{gui}
+\end{DoxyParamCaption}
+)}\hypertarget{calc__result__box_8c_acd610c39c67f9c949378aaa89cebb916}{}\label{calc__result__box_8c_acd610c39c67f9c949378aaa89cebb916}
+
+
+Constructor of the lower G\+UI part. 
+
+This part of the G\+UI contains the calculation button and the result boxes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em gui} & A struct that contains pointers to all gui parts and to the array which contains the resistor values. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Gtk\+Widget$\ast$ Pointer to the constructed and wired-\/up G\+UI part 
+\end{DoxyReturn}
+
+
+\subsection{Variable Documentation}
+\index{calc\+\_\+result\+\_\+box.\+c@{calc\+\_\+result\+\_\+box.\+c}!result\+\_\+power@{result\+\_\+power}}
+\index{result\+\_\+power@{result\+\_\+power}!calc\+\_\+result\+\_\+box.\+c@{calc\+\_\+result\+\_\+box.\+c}}
+\subsubsection[{\texorpdfstring{result\+\_\+power}{result_power}}]{\setlength{\rightskip}{0pt plus 5cm}Gtk\+Widget$\ast$ result\+\_\+power}\hypertarget{calc__result__box_8c_a03bdde00fd1c6cf10c29b023d34a33b4}{}\label{calc__result__box_8c_a03bdde00fd1c6cf10c29b023d34a33b4}
+\index{calc\+\_\+result\+\_\+box.\+c@{calc\+\_\+result\+\_\+box.\+c}!result\+\_\+resistance@{result\+\_\+resistance}}
+\index{result\+\_\+resistance@{result\+\_\+resistance}!calc\+\_\+result\+\_\+box.\+c@{calc\+\_\+result\+\_\+box.\+c}}
+\subsubsection[{\texorpdfstring{result\+\_\+resistance}{result_resistance}}]{\setlength{\rightskip}{0pt plus 5cm}Gtk\+Widget$\ast$ result\+\_\+resistance}\hypertarget{calc__result__box_8c_a29071cefa6e04bbd40f54406d4de450f}{}\label{calc__result__box_8c_a29071cefa6e04bbd40f54406d4de450f}

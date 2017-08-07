@@ -1,0 +1,75 @@
+\hypertarget{resistor__box_8c}{}\section{resistor\+\_\+box.\+c File Reference}
+\label{resistor__box_8c}\index{resistor\+\_\+box.\+c@{resistor\+\_\+box.\+c}}
+{\ttfamily \#include $<$gtk/gtk.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}helper\+\_\+functions.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}resistor\+\_\+box.\+h\char`\"{}}\\*
+Include dependency graph for resistor\+\_\+box.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{resistor__box_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Gtk\+Widget $\ast$ \hyperlink{resistor__box_8c_a85504126ef3346200383c77941978fa0}{resistor\+\_\+box\+\_\+new} (void)
+\begin{DoxyCompactList}\small\item\em Constructor for resistor\+\_\+box G\+UI part. \end{DoxyCompactList}\item 
+gfloat $\ast$ \hyperlink{resistor__box_8c_a4b211b67cb036e4975150e165c5bf360}{update\+\_\+resistor\+\_\+values} (Gtk\+Widget $\ast$resistor\+\_\+box, gfloat $\ast$value\+\_\+array)
+\begin{DoxyCompactList}\small\item\em Updates the value\+\_\+array with values from the G\+UI. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$const \hyperlink{resistor__box_8c_ac7511da732d0573c995c8a23b327ca50}{resistor\+\_\+names} \mbox{[}$\,$\mbox{]} = \{ \char`\"{}res1\char`\"{}, \char`\"{}res2\char`\"{}, \char`\"{}res3\char`\"{} \}
+\item 
+char $\ast$const \hyperlink{resistor__box_8c_a51c65d2cdfcb1fb2352797184d054e06}{resistor\+\_\+labels} \mbox{[}$\,$\mbox{]} = \{\char`\"{}1\+:\char`\"{}, \char`\"{}2\+:\char`\"{}, \char`\"{}3\+:\char`\"{}\}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{resistor\+\_\+box.\+c@{resistor\+\_\+box.\+c}!resistor\+\_\+box\+\_\+new@{resistor\+\_\+box\+\_\+new}}
+\index{resistor\+\_\+box\+\_\+new@{resistor\+\_\+box\+\_\+new}!resistor\+\_\+box.\+c@{resistor\+\_\+box.\+c}}
+\subsubsection[{\texorpdfstring{resistor\+\_\+box\+\_\+new(void)}{resistor_box_new(void)}}]{\setlength{\rightskip}{0pt plus 5cm}Gtk\+Widget$\ast$ resistor\+\_\+box\+\_\+new (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{resistor__box_8c_a85504126ef3346200383c77941978fa0}{}\label{resistor__box_8c_a85504126ef3346200383c77941978fa0}
+
+
+Constructor for resistor\+\_\+box G\+UI part. 
+
+This G\+UI part contains three resistor input field.
+
+\begin{DoxyReturn}{Returns}
+Gtk\+Widget Contains the constructed G\+UI part. 
+\end{DoxyReturn}
+\index{resistor\+\_\+box.\+c@{resistor\+\_\+box.\+c}!update\+\_\+resistor\+\_\+values@{update\+\_\+resistor\+\_\+values}}
+\index{update\+\_\+resistor\+\_\+values@{update\+\_\+resistor\+\_\+values}!resistor\+\_\+box.\+c@{resistor\+\_\+box.\+c}}
+\subsubsection[{\texorpdfstring{update\+\_\+resistor\+\_\+values(\+Gtk\+Widget $\ast$resistor\+\_\+box, gfloat $\ast$value\+\_\+array)}{update_resistor_values(GtkWidget *resistor_box, gfloat *value_array)}}]{\setlength{\rightskip}{0pt plus 5cm}gfloat$\ast$ update\+\_\+resistor\+\_\+values (
+\begin{DoxyParamCaption}
+\item[{Gtk\+Widget $\ast$}]{resistor\+\_\+box, }
+\item[{gfloat $\ast$}]{value\+\_\+array}
+\end{DoxyParamCaption}
+)}\hypertarget{resistor__box_8c_a4b211b67cb036e4975150e165c5bf360}{}\label{resistor__box_8c_a4b211b67cb036e4975150e165c5bf360}
+
+
+Updates the value\+\_\+array with values from the G\+UI. 
+
+The Function assumes a gfloat array of size 3.
+
+
+\begin{DoxyParams}{Parameters}
+{\em resistor\+\_\+box} & The G\+UI part to access the user input.  Float array of size 3 that contains the resistor values \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Variable Documentation}
+\index{resistor\+\_\+box.\+c@{resistor\+\_\+box.\+c}!resistor\+\_\+labels@{resistor\+\_\+labels}}
+\index{resistor\+\_\+labels@{resistor\+\_\+labels}!resistor\+\_\+box.\+c@{resistor\+\_\+box.\+c}}
+\subsubsection[{\texorpdfstring{resistor\+\_\+labels}{resistor_labels}}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ const resistor\+\_\+labels\mbox{[}$\,$\mbox{]} = \{\char`\"{}1\+:\char`\"{}, \char`\"{}2\+:\char`\"{}, \char`\"{}3\+:\char`\"{}\}}\hypertarget{resistor__box_8c_a51c65d2cdfcb1fb2352797184d054e06}{}\label{resistor__box_8c_a51c65d2cdfcb1fb2352797184d054e06}
+\index{resistor\+\_\+box.\+c@{resistor\+\_\+box.\+c}!resistor\+\_\+names@{resistor\+\_\+names}}
+\index{resistor\+\_\+names@{resistor\+\_\+names}!resistor\+\_\+box.\+c@{resistor\+\_\+box.\+c}}
+\subsubsection[{\texorpdfstring{resistor\+\_\+names}{resistor_names}}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ const resistor\+\_\+names\mbox{[}$\,$\mbox{]} = \{ \char`\"{}res1\char`\"{}, \char`\"{}res2\char`\"{}, \char`\"{}res3\char`\"{} \}}\hypertarget{resistor__box_8c_ac7511da732d0573c995c8a23b327ca50}{}\label{resistor__box_8c_ac7511da732d0573c995c8a23b327ca50}

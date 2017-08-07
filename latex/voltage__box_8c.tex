@@ -1,0 +1,60 @@
+\hypertarget{voltage__box_8c}{}\section{voltage\+\_\+box.\+c File Reference}
+\label{voltage__box_8c}\index{voltage\+\_\+box.\+c@{voltage\+\_\+box.\+c}}
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}voltage\+\_\+box.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}helper\+\_\+functions.\+h\char`\"{}}\\*
+Include dependency graph for voltage\+\_\+box.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{voltage__box_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Gtk\+Widget $\ast$ \hyperlink{voltage__box_8c_a5e1085883b0c48140cba70c17a46ae97}{voltage\+\_\+box\+\_\+new} (void)
+\begin{DoxyCompactList}\small\item\em Constructor for voltage\+\_\+box G\+UI element. \end{DoxyCompactList}\item 
+float \hyperlink{voltage__box_8c_a02e5dac060c6b706fd50fb4fcd27f9a2}{get\+\_\+voltage} (Gtk\+Widget $\ast$voltage\+\_\+box)
+\begin{DoxyCompactList}\small\item\em Retrieve voltage value from G\+UI entry field. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{voltage\+\_\+box.\+c@{voltage\+\_\+box.\+c}!get\+\_\+voltage@{get\+\_\+voltage}}
+\index{get\+\_\+voltage@{get\+\_\+voltage}!voltage\+\_\+box.\+c@{voltage\+\_\+box.\+c}}
+\subsubsection[{\texorpdfstring{get\+\_\+voltage(\+Gtk\+Widget $\ast$voltage\+\_\+box)}{get_voltage(GtkWidget *voltage_box)}}]{\setlength{\rightskip}{0pt plus 5cm}float get\+\_\+voltage (
+\begin{DoxyParamCaption}
+\item[{Gtk\+Widget $\ast$}]{voltage\+\_\+box}
+\end{DoxyParamCaption}
+)}\hypertarget{voltage__box_8c_a02e5dac060c6b706fd50fb4fcd27f9a2}{}\label{voltage__box_8c_a02e5dac060c6b706fd50fb4fcd27f9a2}
+
+
+Retrieve voltage value from G\+UI entry field. 
+
+Retrieves float value of the voltage input box. The function needs a reference/pointer to the G\+UI element.
+
+
+\begin{DoxyParams}{Parameters}
+{\em voltage\+\_\+box} & Gtk\+Widget G\+UI element voltage\+\_\+box \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float value of the current set voltage value in the G\+UI 
+\end{DoxyReturn}
+\index{voltage\+\_\+box.\+c@{voltage\+\_\+box.\+c}!voltage\+\_\+box\+\_\+new@{voltage\+\_\+box\+\_\+new}}
+\index{voltage\+\_\+box\+\_\+new@{voltage\+\_\+box\+\_\+new}!voltage\+\_\+box.\+c@{voltage\+\_\+box.\+c}}
+\subsubsection[{\texorpdfstring{voltage\+\_\+box\+\_\+new(void)}{voltage_box_new(void)}}]{\setlength{\rightskip}{0pt plus 5cm}Gtk\+Widget$\ast$ voltage\+\_\+box\+\_\+new (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{voltage__box_8c_a5e1085883b0c48140cba70c17a46ae97}{}\label{voltage__box_8c_a5e1085883b0c48140cba70c17a46ae97}
+
+
+Constructor for voltage\+\_\+box G\+UI element. 
+
+Constructs the voltage\+\_\+box G\+UI element which contains the entry field for setting the voltage.
+
+\begin{DoxyReturn}{Returns}
+Gtk\+Widget A voltage\+\_\+box G\+UI Element 
+\end{DoxyReturn}

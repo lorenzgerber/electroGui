@@ -1,0 +1,55 @@
+\hypertarget{coupling__box_8c}{}\section{coupling\+\_\+box.\+c File Reference}
+\label{coupling__box_8c}\index{coupling\+\_\+box.\+c@{coupling\+\_\+box.\+c}}
+{\ttfamily \#include $<$gtk/gtk.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}coupling\+\_\+box.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}helper\+\_\+functions.\+h\char`\"{}}\\*
+Include dependency graph for coupling\+\_\+box.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{coupling__box_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Gtk\+Widget $\ast$ \hyperlink{coupling__box_8c_a76dc11e43bebffd131ce50fdf01027b6}{coupling\+\_\+box\+\_\+new} (void)
+\begin{DoxyCompactList}\small\item\em Constructor for the Resistor Coupling Gui part. \end{DoxyCompactList}\item 
+int \hyperlink{coupling__box_8c_a38db3eb6757a718a47ddb339f5b15bd4}{get\+\_\+coupling} (Gtk\+Widget $\ast$coupling\+\_\+box)
+\begin{DoxyCompactList}\small\item\em Getter for mode of resistor coupling. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{coupling\+\_\+box.\+c@{coupling\+\_\+box.\+c}!coupling\+\_\+box\+\_\+new@{coupling\+\_\+box\+\_\+new}}
+\index{coupling\+\_\+box\+\_\+new@{coupling\+\_\+box\+\_\+new}!coupling\+\_\+box.\+c@{coupling\+\_\+box.\+c}}
+\subsubsection[{\texorpdfstring{coupling\+\_\+box\+\_\+new(void)}{coupling_box_new(void)}}]{\setlength{\rightskip}{0pt plus 5cm}Gtk\+Widget$\ast$ coupling\+\_\+box\+\_\+new (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{coupling__box_8c_a76dc11e43bebffd131ce50fdf01027b6}{}\label{coupling__box_8c_a76dc11e43bebffd131ce50fdf01027b6}
+
+
+Constructor for the Resistor Coupling Gui part. 
+
+The Resistor coupling G\+UI part allows to choose between serial/parallel coupling of the resistors.
+
+\begin{DoxyReturn}{Returns}
+Gtk\+Widget$\ast$ pointer to the new created Gui part. 
+\end{DoxyReturn}
+\index{coupling\+\_\+box.\+c@{coupling\+\_\+box.\+c}!get\+\_\+coupling@{get\+\_\+coupling}}
+\index{get\+\_\+coupling@{get\+\_\+coupling}!coupling\+\_\+box.\+c@{coupling\+\_\+box.\+c}}
+\subsubsection[{\texorpdfstring{get\+\_\+coupling(\+Gtk\+Widget $\ast$coupling\+\_\+box)}{get_coupling(GtkWidget *coupling_box)}}]{\setlength{\rightskip}{0pt plus 5cm}int get\+\_\+coupling (
+\begin{DoxyParamCaption}
+\item[{Gtk\+Widget $\ast$}]{coupling\+\_\+box}
+\end{DoxyParamCaption}
+)}\hypertarget{coupling__box_8c_a38db3eb6757a718a47ddb339f5b15bd4}{}\label{coupling__box_8c_a38db3eb6757a718a47ddb339f5b15bd4}
+
+
+Getter for mode of resistor coupling. 
+
+Function that queries the selected resitor coupling mode in the gui and returns 1 for serial and 0 for parallel.
+
+\begin{DoxyReturn}{Returns}
+1 = serial, 0 = parallel 
+\end{DoxyReturn}
